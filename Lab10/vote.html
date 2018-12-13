@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body 
+        {
+        background-image: url("https://onwardigo.files.wordpress.com/2016/05/millionaire01.jpg");
+        background-color: #000;
+      }
+      section 
+        {
+        display: flex;
+        justify-content: center;
+        align-content: stretch;
+      }
+      button 
+        {
+        margin: 100px;
+        width: 300px;
+        height: 200px;
+        font-size: 40px;
+        border: 3px solid darkblue;
+        transition: all 0.2s;
+        background-color: white;
+        color: darkblue;
+      }
+      button:hover 
+        {
+        background-color: darkblue;
+        color: white;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form
+        method="post"
+        action="http://aws.computerstudi.es/~gc800182472/comp2112/game1/vote.php"
+      >
+        <input type="hidden" name="vote" value="A" /> <button id="a">A</button>
+      </form>
+      <form
+        method="post"
+        action="http://aws.computerstudi.es/~gc800182472/comp2112/game1/vote.php"
+      >
+        <input type="hidden" name="vote" value="B" /> <button id="b">B</button>
+      </form>
+    </section>
+
+    <br />
+
+    <section>
+      <form
+        method="post"
+        action="http://aws.computerstudi.es/~gc800182472/comp2112/game1/vote.php"
+      >
+        <input type="hidden" name="vote" value="C" /> <button id="c">C</button>
+      </form>
+      <form
+        method="post"
+        action="http://aws.computerstudi.es/~gc800182472/comp2112/game1/vote.php"
+      >
+        <input type="hidden" name="vote" value="D" /> <button id="d">D</button>
+      </form>
+    </section>
+      
+      <button ><a href="result.html">Result</a></button>
+  </body>
+</html>
